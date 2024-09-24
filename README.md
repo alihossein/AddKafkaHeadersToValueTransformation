@@ -37,3 +37,14 @@ Example configuration in the Kafka connector:
 "transforms.AddKafkaHeadersToValueTransformation.field.name": "kafka_headers"
 
 ```
+
+# Build
+To build the project and start using the transformation, simply run the following command in the root directory of the project:
+
+``` 
+mvn clean install
+
+```
+
+This will compile the code, run any tests, and package the transformation into a JAR file that you can then include in your Kafka Connect setup. Once the build completes successfully, you can use the generated JAR file in your Kafka connector's classpath to enable the AddKafkaHeadersToValueTransformation in your Kafka Connect configuration.
+
